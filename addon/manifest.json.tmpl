@@ -1,0 +1,37 @@
+{
+    "manifest_version": 2,
+    "name": "Readable Label Experiment",
+    "version": "{{version}}",
+    "description": "{{description}}",
+    "icons": {
+      "48": "generic-fox.png",
+      "96": "generic-fox.png"
+    },
+    "author": "{{{author}}}",
+    "homepage_url": "{{{homepage}}}",
+    "applications": {
+      "gecko": {
+        "id": "readable-label-experiment@mozilla.org",
+        "strict_min_version": "57.0a1"
+      }
+    },
+    "experiment_apis": {
+      "readerLabel": {
+        "schema": "../experiment/schema.json",
+        "parent": {
+          "scopes": ["addon_parent"],
+          "script": "../experiment/api.js",
+          "paths": [["readerLabel"]]
+        }
+      }
+    },
+    "background": {
+      "scripts": [
+        "background.js"
+      ]
+    },
+    "web_accessible_resources": [
+    ],
+    "permissions": [
+    ]
+  }

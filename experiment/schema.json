@@ -1,0 +1,24 @@
+[
+  {
+    "namespace": "readerLabel",
+    "description": "Change the Reader Mode label",
+    "functions": [
+      {
+        "name": "setIcon",
+        "type": "function",
+        "description": "Changes the Reader Mode icon in the current window.",
+        "async": false,
+        "parameters": [
+          {
+            "type": "string",
+            "name": "icon"
+          },
+          {
+            "type": "number",
+            "name": "width"
+          }
+        ]
+      }
+    ]
+  }
+]
